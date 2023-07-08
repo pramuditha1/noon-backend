@@ -13,7 +13,7 @@ const postSchema = mongoose.Schema({
     tags: [String],
     likes: Number,
     comments: Number,
-    LikedUser: String
+    likedUser: String
 })
 
 const FavouritePostsCollection = mongoose.model('FavouritePostsCollection', postSchema);
