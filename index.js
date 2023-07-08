@@ -5,10 +5,9 @@ import mongoose from "mongoose";
 const app = express();
 dotenv.config();
 
-
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());//avoid cors errors in localhost communication with frontend
+app.use(cors()); //avoid cors errors in localhost communication with frontend
 
 const PORT = process.env.PORT;
 
