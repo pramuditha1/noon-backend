@@ -15,6 +15,6 @@ const postSchema = mongoose.Schema({
     comments: Number
 })
 
-const FavouritePostsCollection = mongoose.model('FavouritePostsCollection', postSchema);
+const PostsCollection = mongoose.model('PostsCollection', postSchema);
 
-export default FavouritePostsCollection;
+export default PostsCollection;
